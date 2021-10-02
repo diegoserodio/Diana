@@ -41,9 +41,9 @@
     font-size: 52px;
 }
 
-input {
+input, select, option {
     width: 80%;
-    padding: 12px 20px;
+    padding: 12px 20px 12px 20px;
     margin: 8px 0;
     background-color: rgba(0,0,0,0);
     display: inline-block;

@@ -13,6 +13,7 @@ import './index.css';
 import SignIn from './Screens/SingIn'
 import SignUp from './Screens/SignUp'
 import Home from './Screens/Home'
+import CreateMission from './Screens/CreateMission'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +21,9 @@ ReactDOM.render(
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/create-mission">
+            <CreateMission />
+          </Route>
           <Route path="/home">
             <Home />
           </Route>
