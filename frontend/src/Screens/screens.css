@@ -6,6 +6,12 @@
     align-items: center;
 }
 
+.home-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
 .forms-box{
     background-image: linear-gradient(#08709B, rgba(4,23,38, 0));
     width: 600px;

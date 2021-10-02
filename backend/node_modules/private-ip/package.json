@@ -1,0 +1,52 @@
+{
+  "name": "private-ip",
+  "version": "2.2.1",
+  "description": "Check if IP address is private.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frenchbread/private-ip.git"
+  },
+  "bugs": "https://github.com/frenchbread/private-ip/issues",
+  "homepage": "https://github.com/frenchbread/private-ip#readme",
+  "authors": [
+    "Damir Mustafin <frenchthebread@gmail.com>",
+    "Sick.Codes <https://twitter.com/sickcodes>",
+    "John Jackson <https://twitter.com/johnjhacking>",
+    "Nick Sahler <https://twitter.com/tensor_bodega>"
+  ],
+  "contributors": [
+    {
+      "name": "Harold Hunt",
+      "url": "https://www.linkedin.com/in/huntharo/"
+    },
+    {
+      "name": "Aravindha Hariharan M",
+      "url": "https://www.linkedin.com/in/aravindha1234u/"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && ./node_modules/.bin/babel src --out-dir lib",
+    "clean": "./node_modules/.bin/rimraf ./lib",
+    "test": "npm run build && ava",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "ip",
+    "address",
+    "private",
+    "netmask",
+    "localhost",
+    "lan"
+  ],
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "babel-cli": "^6.26.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "ip-regex": "^4.3.0",
+    "netmask": "^2.0.2"
+  }
+}

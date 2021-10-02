@@ -1,0 +1,27 @@
+{
+  "name": "go-platform",
+  "version": "1.0.0",
+  "description": "print out golang platform variables",
+  "main": "index.js",
+  "bin": {
+    "go-platform": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbenet/node-go-platform"
+  },
+  "keywords": [
+    "golang",
+    "platform",
+    "go"
+  ],
+  "author": "Juan Benet <juan@benet.ai> (http://juan.benet.ai/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbenet/node-go-platform/issues"
+  },
+  "homepage": "https://github.com/jbenet/node-go-platform"
+}
