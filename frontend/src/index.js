@@ -14,6 +14,9 @@ import SignIn from './Screens/SingIn'
 import SignUp from './Screens/SignUp'
 import Home from './Screens/Home'
 import CreateMission from './Screens/CreateMission'
+import CallForHelp from './Screens/CallForHelp'
+import ThxPage from './Screens/ThxPage'
+import PeersList from './Screens/PeersList'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +24,9 @@ ReactDOM.render(
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/thx-page">
+            <ThxPage />
+          </Route>
           <Route path="/create-mission">
             <CreateMission />
           </Route>
@@ -29,6 +35,12 @@ ReactDOM.render(
           </Route>
           <Route path="/signup">
             <SignUp />
+          </Route>
+          <Route path="/call-for-help">
+            <CallForHelp />
+          </Route>
+          <Route path="/peers-list">
+            <PeersList />
           </Route>
           <Route path="/">
             <SignIn />
