@@ -10,6 +10,16 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .forms-box{
@@ -52,3 +62,76 @@ input, select, option {
     border-radius: 20px;
     box-sizing: border-box;
   }
+
+.left-menu{
+    height: 500px;
+    width: 20%;
+}
+
+.info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+.middle-container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.content-div{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    width: auto;
+}
+
+.logs{
+    height: 100%;
+    border: solid;
+    border-color: tomato;
+    border-radius: 20px;
+    display: flex;
+}
+
+.left-div{
+    width: 10%;
+    border-color: transparent;
+}
+
+.middle-div{
+    width: 60%;
+}
+
+.right-div{
+    width: 30%;
+}
+
+.whole-div{
+    width: 95%;
+}
+
+.location-container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.sensors-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}

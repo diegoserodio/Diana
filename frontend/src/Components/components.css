@@ -3,8 +3,33 @@
     height: 140px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.button-container{
+    background-color: rgba(0,88,108, 0.2);
+    border-radius: 0px 20px 20px 0px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.button-container:hover{
+    background-color: rgba(0,88,108, 0.5);
+    cursor: pointer;
+}
+
+.menu-item-name{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
 }
