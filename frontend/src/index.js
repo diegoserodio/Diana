@@ -14,6 +14,8 @@ import SignIn from './Screens/SingIn'
 import SignUp from './Screens/SignUp'
 import Home from './Screens/Home'
 import CreateMission from './Screens/CreateMission'
+import AddASample from './Screens/AddASample'
+import MissionAstronauts from './Screens/MissionAstronauts'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +23,12 @@ ReactDOM.render(
     <Router>
       <div className="app">
         <Switch>
+        <Route path="/MissionAstronauts">
+            <MissionAstronauts />
+          </Route>
+        <Route path="/AddASample">
+            <AddASample />
+          </Route>
           <Route path="/create-mission">
             <CreateMission />
           </Route>

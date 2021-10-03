@@ -10,6 +10,24 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MAstronauts-container{
+    width: 100vw;
+    height: 300vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.sample-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .forms-box{
@@ -41,6 +59,49 @@
     font-size: 52px;
 }
 
+.mission-astro{
+    width: 45%;
+    padding: 12px 20px 12px 20px;
+    margin: 8px 0;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #08709B;
+    color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+.mission-astro2{
+    width: 45%;
+    height: 90%;
+    margin: 8px 0;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #08709B;
+    color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.mission-astro3{
+    width: 45%;
+    height: 90%;
+    margin: 8px 0;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #08709B;
+    color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
 input, select, option {
     width: 80%;
     padding: 12px 20px 12px 20px;
@@ -52,3 +113,37 @@ input, select, option {
     border-radius: 20px;
     box-sizing: border-box;
   }
+
+  #type-input{
+    width: 400px;
+    border: 1px solid #08709B;
+  }
+
+  #file-input{
+    width: 400px;
+    border: 1px solid #08709B;
+  }
+
+  #name-input{
+    width: 400px;
+    border: 1px solid #08709B;
+  }
+
+  #upload-input{
+    width: 200px;
+    background-color: #08709B;
+    border: 1px solid #08709B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+ #title-input{
+    border: 1px solid #08709B;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
