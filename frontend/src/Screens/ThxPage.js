@@ -18,9 +18,7 @@ class ThxPage extends React.Component{
                 <div className = "help-box">
                 <Header />
                     <div className = "help-form">
-                        <div className = "help-form2">
-                                <div style={{color:"#08709B"}}>THANK YOU FOR YOUR REPORT!</div>
-                        </div>
+                        <div style={{color:"#08709B"}}>THANK YOU FOR YOUR REPORT!</div>
                         <Link to='/home' style={{textDecoration:'none'}}><Button variant="contained" size="large" style={{marginTop:20, marginBottom:20}} >HOME PAGE</Button></Link>
                     </div>
                 </div>
