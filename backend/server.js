@@ -45,6 +45,35 @@ const signIn = async(user) => {
     }
 }
 
+const getSamples = async() => {
+    console.log("Getting all the samples...");
+    try {
+        const db = await orbitdb.docs('missionsamples')
+        await db.load();
+        console.log("All samples fetched:", db.get(''));
+        return db.get('')
+    } catch (error) {
+        console.trace(error)
+        return error
+    }
+}
+
+const appendSample = async(sample) => {
+    console.log("Appending new log...");
+    try {
+        sample._id = uuidv4();
+        const db = await orbitdb.docs('missionsamples')
+        await db.load();
+        db.get('').map(async(entry) => await db.put(entry))
+        await db.put(sample)
+        console.log("Sample added successfully :D")
+        return db.get('')
+    } catch (error) {
+        console.trace(error)
+        return error
+    }
+}
+
 const getLogs = async() => {
     console.log("Getting all the logs...");
     try {
@@ -66,7 +95,7 @@ const appendLog = async(log) => {
         await db.load();
         db.get('').map(async(entry) => await db.put(entry))
         await db.put(log)
-        console.log("Log added successfully :D:")
+        console.log("Log added successfully :D")
         return db.get('')
     } catch (error) {
         console.trace(error)
@@ -127,7 +156,7 @@ const createUser = async(user) => {
 const app = express();
 app.use(express.json());
 app.use(cors());
-const publicPath = path.join(__dirname, '../frontend/build');
+const publicPath = path.join(__dirname, './frontend/build');
 const port = process.env.PORT || 3030;
 app.use(express.static(publicPath));
 
@@ -138,6 +167,14 @@ app.get('/fetch-users', async function (req, res) {
 });
 app.get('/fetch-logs', async function (req, res) {
     const result = await getLogs();
+    return res.send(result);
+});
+app.get('/fetch-samples', async function (req, res) {
+    const result = await getSamples();
+    return res.send(result);
+});
+app.post('/appendsample', async function (req, res) {
+    const result = await appendSample(req.body);
     return res.send(result);
 });
 app.post('/appendlog', async function (req, res) {
