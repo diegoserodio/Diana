@@ -34,6 +34,7 @@ class PeersList extends React.Component{
 
     render(){
         let {user, samples} = this.state;
+        samples=[]
         if(!user || !samples)
             return null;
         return (
@@ -41,6 +42,7 @@ class PeersList extends React.Component{
                 <div style = {{display:"flex", flexDirection:'column', alignItems:'center', justifyContent:'flex-start', height:'100vh', width:'100vw'}}>
                     <Header name={user.name} role={user.role} />
                     <div style = {{display:"flex", flexDirection:'row', alignItems:'center', width: '100%', justifyContent: 'center', marginTop:50}}>
+                        {samples.length > 3 ? (
                         <div style = {{display: "flex", flexDirection: 'column', alignItems:'center'}}>
                             {/* <div className = "peers-box-main-title"> */}
                                 {/* <div style = {{display:"flex", flexDirection:'column', alignItems:'center'}}> */}
@@ -81,7 +83,49 @@ class PeersList extends React.Component{
                                     </div>
                                 </div>
                             </div>
+                        </div>) : (
+                        <div style = {{display: "flex", flexDirection: 'column', alignItems:'center'}}>
+                            {/* <div className = "peers-box-main-title"> */}
+                                {/* <div style = {{display:"flex", flexDirection:'column', alignItems:'center'}}> */}
+                                    <div style={{color:"#fff"}}>LAST UPDATED</div>
+                                {/* </div> */}
+                            {/* </div> */}
+                            <div className = "peers-box-main">
+                                <div style = {{display:"flex", flexDirection:'column', alignItems:'center'}}>
+                                    <div style = {{display:"flex", flexDirection:'row', alignItems:'center'}}>
+                                        <div className = "peers-box-file">
+                                            <div style = {{display: "flex", flexDirection: 'column', alignItems: 'center', justifyContent:'center', height:'100%', cursor:'pointer'}}>
+                                                <img src="\Images\moon_sample_1.jpg" alt="step-print" style={{width:180,borderRadius: "20px", marginTop:"15px"}} />
+                                                {/* <div style={{color:'white', marginTop:10}}><b>{samples[3].author}</b> | {samples[3].timestamp} | {samples[3].title}</div> */}
+                                            </div>
+                                        </div>
+                                        <div className = "peers-box-file">
+                                            <div style = {{display: "flex", flexDirection: 'column', alignItems: 'center', justifyContent:'center', height:'100%', cursor:'pointer'}}>
+                                                <img src="\Images\moon_sample_2.jpg" alt="step-print" style={{width:180,borderRadius: "20px", marginTop:"15px"}} />
+                                                {/* <div style={{color:'white', marginTop:10}}><b>{samples[2].author}</b> | {samples[2].timestamp} | {samples[2].title}</div> */}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style = {{display:"flex", flexDirection:'column', alignItems:'center'}}>
+                                    <div style = {{display:"flex", flexDirection:'row', alignItems:'center'}}>
+                                        <div className = "peers-box-file">
+                                            <div style = {{display: "flex", flexDirection: 'column', alignItems: 'center', justifyContent:'center', height:'100%', cursor:'pointer'}}>
+                                                <img src="\Images\moon_sample_3.jpg" alt="step-print" style={{width:180,borderRadius: "20px", marginTop:"15px"}} />
+                                                {/* <div style={{color:'white', marginTop:10}}><b>{samples[2].author}</b> | {samples[2].timestamp} | {samples[2].title}</div> */}
+                                            </div>
+                                        </div>
+                                        <div className = "peers-box-file">
+                                            <div style = {{display: "flex", flexDirection: 'column', alignItems: 'center', justifyContent:'center', height:'100%', cursor:'pointer'}}>
+                                                <img src="\Images\moon_sample_4.jpg" alt="step-print" style={{width:180,borderRadius: "20px", marginTop:"15px"}} />
+                                                {/* <div style={{color:'white', marginTop:10}}><b>{samples[0].author}</b> | {samples[0].timestamp} | {samples[0].title}</div> */}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        )}
                         <div style = {{display:"flex", flexDirection:'column', alignItems:'center'}}>
                             {/* <div className = "peers-box-secondary-title"> */}
                                 <div style = {{display:"flex", flexDirection:'column', alignItems:'center'}}>

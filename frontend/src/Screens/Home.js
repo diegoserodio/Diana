@@ -90,12 +90,13 @@ class Home extends React.Component{
             this.setState({logsList:logsList})
         }
         else{
-            let result = [];
-            result.push(logsList[0])
-            result.push(logsList.filter(log => log._id==="a5c032ed-0a18-4056-9ec3-a052c7f85b6e")[0])  
-            if(result[0]._id===result[1]._id)
-                result[1] = logsList[1]
-            this.setState({logsList:result})
+            // let result = [];
+            // result.push(logsList[0])
+            // result.push(logsList.filter(log => log._id==="a5c032ed-0a18-4056-9ec3-a052c7f85b6e")[0])  
+            // if(result[0]._id===result[1]._id)
+            //     result[1] = logsList[1]
+            // this.setState({logsList:result})
+            this.setState({logsList:logsList})
         }
     }
 

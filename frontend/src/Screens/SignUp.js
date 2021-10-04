@@ -30,7 +30,7 @@ export default function SignUp() {
                     <img src="/Images/logo.png" alt="logo" style={{width:200}} />
                     <div id="brand-name">D.I.A.N.A</div>
                 </div>    
-                <input type="text" id="name-input" name="name" placeholder="NAME" onChange={e => setName(e.target.value)} />
+                <input type="text" id="name-input1" name="name" placeholder="NAME" onChange={e => setName(e.target.value)} />
                 <input type="text" id="login-input" name="login" placeholder="LOGIN" onChange={e => setLogin(e.target.value)} />
                 <input type="password" id="password-input" name="password" placeholder="PASSWORD" onChange={e => setPassword(e.target.value)} />
                 <select name="role" id="role" onChange={e => setRole(e.target.value)}>
